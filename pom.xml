@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dev7ex</groupId>
+    <artifactId>screenpilot</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>ScreenPilot</name>
+    <description>Remote Desktop &amp; Session Management</description>
+
+    <modules>
+        <module>screenpilot-resources</module>
+        <module>screenpilot-api</module>
+        <module>screenpilot-desktop</module>
+        <module>screenpilot-distribution</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>${project.source.version}</maven.compiler.source>
+        <maven.compiler.target>${project.source.version}</maven.compiler.target>
+
+        <project.source.version>17</project.source.version>
+        <project.source.encoding>UTF-8</project.source.encoding>
+
+        <maven.jar.plugin.version>3.4.2</maven.jar.plugin.version>
+        <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
+        <maven.shade.plugin.version>3.6.0</maven.shade.plugin.version>
+        <maven.javadoc.plugin.version>3.8.0</maven.javadoc.plugin.version>
+
+        <dependency.annotations.version>24.1.0</dependency.annotations.version>
+        <dependency.commons.io.version>2.14.0</dependency.commons.io.version>
+        <dependency.lombok.version>1.18.34</dependency.lombok.version>
+    </properties>
+
+</project>
